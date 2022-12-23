@@ -84,7 +84,7 @@ conn.connect((error)=>{
 });
 
 // Create a Table 
-app.post("/register", function(req,res){
+app.post("/signup", function(req,res){
     const { fullname, email, password} = req.body;
     conn.query('INSERT INTO signup SET ?', {username:fullname , email: email, password: password},(error,results) =>{
         if (error) {
