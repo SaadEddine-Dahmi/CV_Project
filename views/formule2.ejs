@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .about{
+            display: flex;
+            flex-direction: column;
+            border: none;
+            width: 500px;
+            height: 70px;
+            outline: none;
+            border-bottom: solid #888888 1px;
+            margin-bottom: 15px;
+            overflow-x: hidden;
+        }
+    </style>
+    <title></title>
+</head>
+<body >
+  <a href="/">← Home</a> 
+ <form class="font-sans antialiased w-full">
+    <div class="container  w-4/5 mx-auto">
+      <main id="wrapper" class="flex flex-col sm:flex-row-reverse sm:m-12 shadow-2xl">
+        <div id="sidebar" class="w-full sm:max-w-sm p-8 bg-zinc-300">
+          <div class="px-2 mb-12">
+            <h1 class="text-center text-2xl font-semibold mb-1"><input class="bg-zinc-300" type="text" placeholder="First and Last Name"></h1>
+          </div>
+
+          <div class="font-light text-lg px-2 mb-12">
+            <h2 class="text-xl font-semibold mb-4">Contact</h2>
+            <input class="bg-zinc-300 border-b-2 border-black" type="tel" placeholder="your number phone">
+            <h2 class="text-xl font-semibold mb-4">Email</h2>
+            <div class="flex items-center my-3">
+              
+              <input type="email" class="bg-zinc-300 border-b-2 border-black" placeholder="dannydev@example.com"></input>
+            </div>
+            
+            <div class="flex items-center my-3">
+                <h2 class="text-xl font-semibold mb-4">Location</h2>
+                
+            </div>
+          <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Enter your location">
+        </div>
+          <div class="font-light text-lg px-2 mb-12">
+            <h2 class="text-xl font-semibold mb-4">Skills & Tools</h2>
+            <ul class="list-none">
+                <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Skills" >
+                
+            </ul>
+          </div>
+
+          <div class="font-light text-lg px-2 mb-12">
+            <h2 class="text-xl font-semibold mb-4">Education</h2>
+            <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Education">
+          </div>
+
+          <div class="font-light text-lg px-2 mb-12">
+            <h2 class="text-xl font-semibold mb-4">Languages</h2>
+            <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Languages">
+          </div>
+        </div>
+        <div class="content w-full p-12">
+          <div id="profile" class="prose">
+            <h2 class="section-headline mb-5">Profile</h2>
+            <textarea class="focus:outline-0 border-b-2" name="" id="" cols="60" rows="10" placeholder="Describe yourself"></textarea>
+          </div>
+          
+          <!-- <hr class="mt-8 mb-12" /> -->
+          <div id="experience" class="prose mt-4">
+            <h2 class="section-headline">Experience</h2>
+            <div>
+              
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                    <textarea class="border-b-2" name="" id="" cols="45" rows="5" placeholder="Experience"></textarea>
+                </div>
+              </section>
+              <section class="mb-6 mt-4">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Task:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full ">
+                    <textarea class="border-b-2" name="" id="" cols="45" rows="5" placeholder="Tasks" ></textarea>
+                </div>
+              </section>
+              <section class="mb-6 mt-4">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Description:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                    <textarea class="border-b-2" name="" id="" cols="45" rows="5" placeholder="Description"  ></textarea>
+                </div>
+              </section>
+              <section class="mb-6 mt-4">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Tools:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                    <textarea class="border-b-2" name="" id="" cols="45" rows="5" placeholder="Tools"></textarea>
+                </div>
+              </section>
+            </div>
+          </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </form>
+    <button onclick="printFunction()" id="btn-print-this" class=" block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded"> Submit </button>
+    <script>
+        function printFunction() { 
+            window.print(); 
+          }onclick="printFunction()"
+    </script>
+  </body>
+</html>

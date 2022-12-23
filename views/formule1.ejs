@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+</head>
+
+<body >
+    <a href="/">← Home</a> 
+    <!-- outer container -->
+    <form method="get" action="" id="" class="antialiased w-4/5 mx-auto">
+        <div id="cv-display" class="container border border-gray-300 rounded-sm shadow-lg  w-4/5 mx-auto">
+            <!-- header (profile) -->
+            <h1 class="text-5xl font-extrabold"><input type="text" class=" w-90 ml-56 mt-11 mb-11" placeholder="First and Last Name" required> </h1>
+              
+            <!-- detailed info -->
+            <main class="flex gap-x-10 mt-10">
+                <div id="sidebar" class="w-full sm:max-w-sm p-8 bg-zinc-300">
+                    <div class="font-light text-lg px-2 mb-12">
+                      <h2 class="text-xl font-semibold mb-4">Contact</h2>
+                      <input class="bg-zinc-300 border-b-2 border-black" type="tel" placeholder="your number phone">
+                      <h2 class="text-xl font-semibold mb-4">Email</h2>
+                      <div class="flex items-center my-3">
+                        
+                        <input type="email" class="bg-zinc-300 border-b-2 border-black" placeholder="dannydev@example.com"></input>
+                      </div>
+                      
+                      <div class="flex items-center my-3">
+                          <h2 class="text-xl font-semibold mb-4">Location</h2>
+                          
+                      </div>
+                    <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Enter your location">
+                  </div>
+                    <div class="font-light text-lg px-2 mb-12">
+                      <h2 class="text-xl font-semibold mb-4">Skills & Tools</h2>
+                      <ul class="list-none">
+                          <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Skills" >
+                          
+                      </ul>
+                    </div>
+          
+                    <div class="font-light text-lg px-2 mb-12">
+                      <h2 class="text-xl font-semibold mb-4">Education</h2>
+                      <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Education">
+                    </div>
+          
+                    <div class="font-light text-lg px-2 mb-12">
+                      <h2 class="text-xl font-semibold mb-4">Languages</h2>
+                      <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Languages">
+                    </div>
+                  </div>
+                  <div class="content w-full p-12">
+                    
+                <!-- info -->
+                <div class="w-4/6">
+                    <section>
+                        <!-- about me -->
+                        <h2 class="text-2xl  font-semibold">About</h2>
+                        <textarea class="border-b-2 mt-4" name="" id="" cols="50" rows="5" placeholder="Describe yourself"></textarea>
+
+                    </section>
+                    
+                    <section>
+                        <!-- work experiences -->
+                        <h2 class="text-2xl mt-6 pb-1  font-semibold">Work Experiences</h2>
+                        <ul class="mt-2">
+                            <li class="pt-2">
+                                <p class="flex justify-between text-sm"><strong class="text-base"><input type="" placeholder="Company Name" ></strong></p>
+                                <p class="flex justify-between text-base"><small><input type="" placeholder="Job title" ></small><small></p>
+                                <textarea class="border-b-2 mt-4" name="" id="" cols="60" rows="5" placeholder="Experiences"></textarea>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <!-- education -->
+                        <h2 class="text-2xl mt-6 pb-1  font-semibold">Education</h2>
+                        <ul class="mt-2">
+                            <li class="pt-2">
+                                <p class="flex justify-between text-sm"><strong class="text-base"><input type="" placeholder="Education"></strong></p>
+                                <p class="flex justify-between text-base"><small></small></p>
+                                <textarea class="border-b-2 mt-4 w-max" name="" id="" cols="60px" rows="5"placeholder="Univerisity" ></textarea>
+                            </li>
+                            
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </form>
+    <hr class="mt-8 mb-8" />
+        <button onclick="printFunction()" id="btn-print-this" class=" block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded"> Submit </button>
+    <script>
+        function printFunction() { 
+            window.print(); 
+          }onclick="printFunction()"
+    </script>
+
+    
+</body>
+
+</html>
