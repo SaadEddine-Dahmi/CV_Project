@@ -20,38 +20,38 @@
               
             <!-- detailed info -->
             <main class="flex gap-x-10 mt-10">
-                <div id="sidebar" class="w-full sm:max-w-sm p-8 bg-zinc-300">
+                <div id="sidebar" class="w-full sm:max-w-sm p-8 bg-yellow-300">
                     <div class="font-light text-lg px-2 mb-12">
                       <h2 class="text-xl font-semibold mb-4">Contact</h2>
-                      <input class="bg-zinc-300 border-b-2 border-black" type="tel" placeholder="your number phone">
+                      <input class="bg-yellow-300 border-b-2 border-black" type="tel" placeholder="your number phone"required>
                       <h2 class="text-xl font-semibold mb-4">Email</h2>
                       <div class="flex items-center my-3">
                         
-                        <input type="email" class="bg-zinc-300 border-b-2 border-black" placeholder="dannydev@example.com"></input>
+                        <input type="email" class="bg-yellow-300 border-b-2 border-black" placeholder="dannydev@example.com" required></input>
                       </div>
                       
                       <div class="flex items-center my-3">
                           <h2 class="text-xl font-semibold mb-4">Location</h2>
                           
                       </div>
-                    <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Enter your location">
+                    <input type="text" class="bg-yellow-300 border-b-2 border-black" placeholder="Enter your location" required>
                   </div>
                     <div class="font-light text-lg px-2 mb-12">
                       <h2 class="text-xl font-semibold mb-4">Skills & Tools</h2>
                       <ul class="list-none">
-                          <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Skills" >
+                          <input type="text" class="bg-yellow-300 border-b-2 border-black" placeholder="Skills" required>
                           
                       </ul>
                     </div>
           
                     <div class="font-light text-lg px-2 mb-12">
                       <h2 class="text-xl font-semibold mb-4">Education</h2>
-                      <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Education">
+                      <input type="text" class="bg-yellow-300 border-b-2 border-black" placeholder="Education"required>
                     </div>
           
                     <div class="font-light text-lg px-2 mb-12">
                       <h2 class="text-xl font-semibold mb-4">Languages</h2>
-                      <input type="text" class="bg-zinc-300 border-b-2 border-black" placeholder="Languages">
+                      <input type="text" class="bg-yellow-300 border-b-2 border-black" placeholder="Languages"required>
                     </div>
                   </div>
                   <div class="content w-full p-12">
@@ -71,8 +71,8 @@
                         <ul class="mt-2">
                             <li class="pt-2">
                                 <p class="flex justify-between text-sm"><strong class="text-base"><input type="" placeholder="Company Name" ></strong></p>
-                                <p class="flex justify-between text-base"><small><input type="" placeholder="Job title" ></small><small></p>
-                                <textarea class="border-b-2 mt-4" name="" id="" cols="60" rows="5" placeholder="Experiences"></textarea>
+                                <p class="flex justify-between text-base"><small><input type="" placeholder="Job title" required></small><small></p>
+                                <textarea class="border-b-2 mt-4" name="" id="" cols="60" rows="5" placeholder="Experiences" required></textarea>
                             </li>
                         </ul>
                     </section>
@@ -83,7 +83,7 @@
                             <li class="pt-2">
                                 <p class="flex justify-between text-sm"><strong class="text-base"><input type="" placeholder="Education"></strong></p>
                                 <p class="flex justify-between text-base"><small></small></p>
-                                <textarea class="border-b-2 mt-4 w-max" name="" id="" cols="60px" rows="5"placeholder="Univerisity" ></textarea>
+                                <textarea class="border-b-2 mt-4 w-max" name="" id="" cols="60px" rows="5"placeholder="Univerisity" required></textarea>
                             </li>
                             
                         </ul>
@@ -92,8 +92,9 @@
             </main>
         </div>
     </form>
+    
     <hr class="mt-8 mb-8" />
-        <button onclick="printFunction()" id="btn-print-this" class=" block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded"> Submit </button>
+        <button onclick="printFunction()" id="btn-print-this" type="submit" class=" block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded"> Submit </button>
     <script>
         function printFunction() { 
             window.print(); 

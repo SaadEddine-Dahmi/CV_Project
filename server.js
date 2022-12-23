@@ -1,3 +1,4 @@
+
 const mysql = require('mysql2');
 const { response } = require("express");
 const bodyParser = require("body-parser");
@@ -12,6 +13,7 @@ app.use(express.urlencoded({
     extended: true
 }))
 
+// 
 app.get("/", function (req, res) {
     res.render("index")
     console.log('index is working')
@@ -48,6 +50,8 @@ app.get("/formule2", function (req, res) {
 
 
 })
+
+// create a connection between MySql and NodeJS
 const conn = mysql.createConnection({
     host : 'localhost',
     user : 'root',
@@ -63,7 +67,7 @@ conn.connect((error)=>{
 }
  });
 
-
+// Cheking email and password
  app.post("/login", function(req,res){
     const { email, password} = req.body;
     conn.query("SELECT * FROM signup WHERE email = ? and password = ?",[email,password],function(error,results,fields){
@@ -71,13 +75,15 @@ conn.connect((error)=>{
             res.redirect("templates", 301);
         } 
        else{
-            res.send("email or code khaser")
+            res.send("email or Password doesn't exist")
            
         }
     });
     
     
 });
+
+// Create a Table 
 app.post("/register", function(req,res){
     const { fullname, email, password} = req.body;
     conn.query('INSERT INTO signup SET ?', {username:fullname , email: email, password: password},(error,results) =>{
